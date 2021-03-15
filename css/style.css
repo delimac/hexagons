@@ -1,0 +1,107 @@
+body {
+  color: hsla(0,1%,1%,1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+header .container {
+  padding: 25px;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: hsla(0,1%,1%,1);
+}
+
+nav h1 {
+  line-height: 1;
+}
+
+.hero {
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 70vh;
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-guitar {
+  background-color: #2C9BFF;
+  padding: 4%;
+  text-align: center;
+  width: 50%;
+}
+
+.about-info {
+  background-color: #F9DBD7;
+  color: #2C9BFF;
+  padding: 4%;
+  width: 50%;
+}
+
+.about-info h2,
+.about-info p {
+  margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 500px) {
+  header .container {
+    padding: 10px;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  nav img {
+    max-width: 150px;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .about-guitar,
+  .about-info {
+    padding: 8%;
+    width: 100%;
+  }
+} 
+
