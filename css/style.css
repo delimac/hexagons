@@ -65,8 +65,10 @@ nav h1 {
 .about-guitar {
   background-color: #2C9BFF;
   padding: 4%;
-  text-align: center;
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-info {
@@ -81,7 +83,93 @@ nav h1 {
   margin-bottom: 3%;
 }
 
-@media only screen and (max-width: 500px) {
+.about-info h2 {
+  margin-bottom: 100px;
+}
+
+.store > .container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.store h2 {
+  margin-bottom: 15px;
+}
+
+.show-filters {
+  display: none;
+}
+
+.filters .selected {
+  border-bottom: solid 3px #2C9BFF;
+  color: #2C9BFF;
+  font-weight: 700;
+  padding-bottom: 1px;
+}
+
+.filters li {
+  display: inline;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.products {
+  margin-top: 20px;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  color: rgba(255,255,255,1);
+  transition: all 0.25s ease-in;
+  position: relative;
+  width: 33.3333%;
+}
+
+.product .overlay {
+  background-color: rgba(44, 155, 255, 0.75);
+  opacity: 0;
+  padding: 30px;
+  transition: all 0.25s ease-in;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+
+.product h4 {
+  font-size: 20px;
+}
+
+.product p {
+  font-size: 36px;
+  font-weight: 700;
+
+  position: absolute;
+  bottom: 20px;
+}
+
+.footer {
+  background-color: #2C9BFF;
+  padding: 15px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
   header .container {
     padding: 10px;
   }
@@ -96,6 +184,11 @@ nav h1 {
 
   .hero {
     height: 50vh;
+  }
+
+  .about .container {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .about-guitar,
